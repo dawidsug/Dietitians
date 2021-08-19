@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain
 {
@@ -13,8 +14,10 @@ namespace Domain
         public string Street { get; set; }
         public string Number { get; set; }
         public string PostalCode { get; set; }
-        public Dietitian Dietitian { get; set; }
-        public Patient Patient { get; set; }
+        //[ForeignKey("DietitianId")]
+        public Dietitian Dietitian { get; set; } = new Dietitian();
+        //[ForeignKey("PatientId")]
+        public Patient Patient { get; set; } = new Patient();
         public bool Visited { get; set; }
     }
 }
