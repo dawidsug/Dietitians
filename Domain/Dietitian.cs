@@ -15,6 +15,6 @@ namespace Domain
         public int Like { get; set; }
         public int Unlike { get; set; }
         public DateTime DateOfJoining { get; set; }
-        public List<Comment> Comments { get; set; }
+        //public List<Comment> Comments { get; set; }
     }
 }

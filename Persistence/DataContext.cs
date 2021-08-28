@@ -14,7 +14,7 @@ namespace Persistence
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Visit> Visits { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Comment>()
                 .HasKey(fs => new { fs.CommentForeignKey });
@@ -22,7 +22,7 @@ namespace Persistence
             modelBuilder.Entity<Comment>()
             .HasOne(p => p.Rated).WithMany(d => d.Comments)
             .HasForeignKey(p => p.Id);
-        }
+        }*/
 
     }
 }
